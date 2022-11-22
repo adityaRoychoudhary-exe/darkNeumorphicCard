@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+/* my go-to colors */
+:root {
+  --color-darke: #161619;
+  --color-light: #f8f8ff;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--color-darke);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 35%;
+  height: 500px;
+  background-color: var(--color-darke);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 92%;
+  height: 98%;
+  box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.05),
+    5px 5px 15px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: var(--color-light);
+}
+
+.logo {
+  width: 150px;
+  border-radius: 10px;
+}
+
+.sub {
+  padding: 20px 0;
+  font-size: 20px;
+}
+
+.para {
+  padding: 4px 10px;
+  text-align: justify;
+  line-height: 24px;
+  margin: 0 60px;
+  border: 2px solid var(--color-light);
+  border-bottom-style: none;
+  border-right-style: none;
+}
+
+ul {
+  padding: 0 50px;
+}
+
+ul li {
+  list-style: square;
+}
+
+.btn {
+  width: 120px;
+  padding: 7px;
+  font-weight: bold;
+  background-color: var(--color-darke);
+  box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.05),
+    5px 5px 15px rgba(0, 0, 0, 0.5);
+    color: var(--color-light);
+  border-radius: 10px;
+  border: none;
+  margin-top: 20px;
+}
+
+.btn:hover {
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  background-color: var(--color-light);
+  color: var(--color-darke);
+}
